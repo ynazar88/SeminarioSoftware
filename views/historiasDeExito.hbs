@@ -1,0 +1,45 @@
+<div class="historiasExito">
+  <div class="cajaHistoria">
+    <h2 class="text-uppercase text-center">Historias de Exito </h2>
+    <div class="container">
+      <ul  class="row">
+        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img  src="images/html-css.jpg" class="img-responsive"/></li>
+      </ul>
+
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+  </div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+  $(document).ready(function(){
+   $('li img').on('click',function(){
+        var src = $(this).attr('src');
+        var img = '<img src="' + src + '" class="img-responsive"/>';
+        $('#myModal').modal();
+        $('#myModal').on('shown.bs.modal', function(){
+            $('#myModal .modal-body').html(img);
+        });
+        $('#myModal').on('hidden.bs.modal', function(){
+            $('#myModal .modal-body').html('');
+        });
+   });
+})
+  </script>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+        <h2 class="text-center">Nos encontramos en mas departamentos</h2>
+        <div class="imgHonduras">
+        <img data-holder-rendered="true" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1NTQzMWExN2I5IHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTU1NDMxYTE3YjkiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTgzLjUiIHk9IjI2MS43Ij41MDB4NTAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" class="img-responsive center-block" data-src="holder.js/800x600/auto" alt="800x600">
+      
+        </div>
+    </div>
+  </div>
+</div>

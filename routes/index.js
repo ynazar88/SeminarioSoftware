@@ -14,6 +14,13 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/somos', function(req, res, next) {
+  res.render('somos', { title: 'Express' });
+});
+router.get('/historiasDeExito', function(req, res, next) {
+  res.render('historiasDeExito', { title: 'Express' });
+});
+
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Express' });
 });

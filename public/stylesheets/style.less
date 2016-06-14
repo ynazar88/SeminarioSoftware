@@ -1,4 +1,11 @@
-
+@darkPrimaryColor:   #D32F2F;
+@primaryColor:       #F44336;
+@lightPrimaryColor:  #FFCDD2;
+@textPrimaryColor:   #FFFFFF;
+@accentColor:        #03A9F4;
+@primaryTextColor:   #212121;
+@secondaryTextColor: #727272;
+@dividerColor:       #B6B6B6;
 @media (min-width:678px){
 
 .banner-content{
@@ -53,7 +60,7 @@ margin: 0;
   background-position: 90% 80%;
   background-size: cover;
 }
-.infoEstrategias h2,h1 {
+.infoEstrategias h2 ,.infoEstrategias h1 {
   text-align: center;
   margin-bottom: 15px;
 }
@@ -63,8 +70,12 @@ margin: 0;
 .estrategias .btn{
 text-align: center;
 }
+.cajaDonacionP{
+  width: 90%;
+  margin: auto;
+}
 .iconos{
-background-color:#F44336; /*rojo material*/
+background-color:@darkPrimaryColor; /*rojo material*/
  display:block;
 margin:auto;
 font-size:80px;
@@ -123,7 +134,7 @@ padding-bottom: 20px;
   border-radius: 15px;
 }
 .post-fecha{
-  color:#448AFF; /*azul material*/
+  color:@accentColor; /*azul material*/
 }
 
 .imagenNinos{
@@ -150,7 +161,7 @@ footer{
   background-color: #f7e9e9;
 }
 .footer{
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 .footerLink{
   list-style: none;
@@ -174,6 +185,45 @@ footer{
   text-align: center;
   background-color: rgb(0, 0, 0);
   color: white;
+}
+.banner-rpt{
+  background-color: @lightPrimaryColor;
+  height: 20vh;
+}
+.historiasExito{
+  width: 100%;
+  height: 600px;;
+  background-color: rgba(38, 34, 34, 0.9);
+  background-image: url("../images/dibujo.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.historiasExito ul{
+  padding: 0;
+  margin: 0;
+}
+.historiasExito ul li{
+  list-style: none;
+  margin-bottom: 25px;
+}
+.historiasExito li img{
+  cursor: pointer;
+}
+.cajaHistoria{
+  width: 55%;
+  height: 500px;;
+  background:white;
+  margin: auto;
+  border: 1px solid @dividerColor;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  border-radius: 2px;
+}
+.imgHonduras{
+  margin-bottom: 50px;
 }
 /*   -------------------------*/
 @media screen and (min-width:1300px){
