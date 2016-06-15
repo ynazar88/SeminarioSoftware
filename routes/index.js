@@ -20,7 +20,9 @@ router.get('/somos', function(req, res, next) {
 router.get('/historiasDeExito', function(req, res, next) {
   res.render('historiasDeExito', { title: 'Express' });
 });
-
+router.get('/nuestroEquipo', function(req, res, next) {
+  res.render('nuestroEquipo', { title: 'Express' });
+});
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Express' });
 });
