@@ -146,7 +146,7 @@ footer{
 }
 .banner-rpt{
   background-color: @lightPrimaryColor;
-  height: 20vh;
+  height: 15vh;
 }
 .historiasExito{
   width: 100%;
@@ -263,14 +263,26 @@ overflow: hidden;
   margin-right: 7px;
   padding: 5px;
 }
-
+.imagen-Somos{
+ width: 100%;
+ height: auto;
+ overflow: hidden;
+ background-color: red;
+ margin-bottom: 10px;
+}
+.imagen-Somos img{
+max-width: 100%;
+}
 /*   -------------------------*/
 @media screen and (min-width:1300px){
   .iconos{
   width: 178px;
 
   }
-
+  .banner-rpt{
+    background-color: @lightPrimaryColor;
+    height: 10vh;
+  }
   @media (max-width: 600px){
     footer{
       text-align: center;
@@ -284,6 +296,11 @@ overflow: hidden;
   float: left;
   width: 25%;
 
+  }
+  .banner-rpt{
+    background-color: @lightPrimaryColor;
+    height: 20vh;
+    overflow: hidden;
   }
   .caja-importante{
     text-align: left;

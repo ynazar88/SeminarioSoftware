@@ -12,6 +12,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'index', inicio:'inicio' });
 });
 
+router.get('/Estrategias', function(req, res, next) {
+  var estrategia="estrategias";
+  res.render('Estrategias', { title: 'estrategia', inicio:'estrategias' });
+});
 router.get('/somos', function(req, res, next) {
   var somos="somos";
   res.render('somos',{ title: 'somos', somos:'somos' });
